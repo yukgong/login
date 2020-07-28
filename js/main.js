@@ -10,7 +10,7 @@ const a = document.querySelectorAll("a");
 
 function inputRemoveEvent() {
     setTimeout(() => {
-        input.placeholder = "이메일";
+        input.placeholder = label.innerText;
         label.classList.remove("show");
     }, 300);
     TweenMax.to(label, 0.3, {
